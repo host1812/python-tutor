@@ -13,11 +13,8 @@ def get_cards2(n):
     global cards2
     result = []
     if n <= len(cards2):
-        # print(f"DEBUG: before {cards2}")
-        # import pdb ; pdb.set_trace()
-        result = cards2[len(cards2):-n-1:-1]
+        result = cards2[-n:]
         cards2 = cards2[:len(cards2)-n]
-        # print(f"DEBUG: after {cards2}")
     return result
 
 # print(get_cards(52))
@@ -30,10 +27,10 @@ def get_cards2(n):
 # print(get_cards2(1))
 # print(f"cards2 have {len(cards2)} left.")
 
-for n in range(1000):
-    get_cards2(52)
+# for n in range(1000):
+#     get_cards2(52)
 
-# if __name__ == '__main__':
-#     import timeit
-#     print(timeit.timeit("get_cards(52)", setup="from __main__ import get_cards"))
-#     print(timeit.timeit("get_cards2(52)", setup="from __main__ import get_cards, get_cards2"))
+if __name__ == '__main__':
+    import timeit
+    print(timeit.timeit("get_cards(52)", setup="from __main__ import get_cards"))
+    print(timeit.timeit("get_cards2(52)", setup="from __main__ import get_cards, get_cards2"))
