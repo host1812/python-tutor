@@ -1,14 +1,11 @@
 class Pet:
     @classmethod
     def from_keys(cls, kwargs):
-        print(kwargs)
-        print("tail" not in kwargs)
-        print("speed" not in kwargs)
-        print("name" not in kwargs)
-        if "speed" or "name" or "tail" not in kwargs:
+        if not all (k in kwargs for k in ("name","speed","tail")):
             print("error!")
-
-        return cls()
+            return None
+        
+        return cls(kwargs.get("name"), kwargs.get("speed"), kwargs.get("tail"))
     
     def __init__(self, name, speed, tail = False):
         self.name = name
