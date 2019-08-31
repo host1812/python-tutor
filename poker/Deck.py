@@ -64,3 +64,10 @@ deck.shuffle()
 
 for card in deck:
     print(card)
+
+# c = Card(1,1)
+# print(c)
+
+# c.suit = "Hearts"
+
+# print(c)
