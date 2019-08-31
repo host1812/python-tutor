@@ -32,10 +32,14 @@ class Deck:
     def __repr__(self):
         return f"Deck of {len(self.cards)} cards"
 
+    def __iter__(self):
+        return iter(self.cards)
+
+
 deck = Deck()
-print(deck.cards)
+# print(deck.cards)
 deck.shuffle()
-print(deck.cards)
+# print(deck.cards)
 # print(deck.cards)
 # print(deck)
 # print(deck.count())
@@ -57,3 +61,6 @@ print(deck.cards)
 
 # print(deck.deal_hand(9))
 # print(deck.count())
+
+for card in deck:
+    print(card)
