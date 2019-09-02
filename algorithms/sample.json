@@ -1,0 +1,52 @@
+[
+    {
+        "First": "Alexandr",
+        "Last": "Fedorenchik",
+        "Age": 56,
+        "Children": []
+    },
+    {
+        "First": "Elena",
+        "Last": "Fedorenchik",
+        "Age": 33,
+        "Children": [
+            {
+                "First": "Anita",
+                "Last": "Bonita",
+                "Age": 3
+            },
+            {
+                "First": "Hose",
+                "Last": "Bonita",
+                "Age": 1
+            }
+        ]
+    },
+    {
+        "First": "Bob",
+        "Last": "Doog",
+        "Age": 45,
+        "Children": [
+            {
+                "First": "Billy",
+                "Last": "Doog",
+                "Age": 7
+            },
+            {
+                "First": "Siis",
+                "Last": "Doog",
+                "Age": 2
+            }
+        ]
+    },
+    {
+        "First": "Alan",
+        "Last": "Silver",
+        "Age": 66
+    },
+    {
+        "First": "Zoe",
+        "Last": "Soory",
+        "Age": 32
+    }
+]
